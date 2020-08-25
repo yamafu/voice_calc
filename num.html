@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head><body>
+<script>
+    var utter =  window.AppInventor.getWebViewString(); //uttered text
+    const pat = /[\d.]+/g; // regular expression for real numbers
+    window.AppInventor.setWebViewString(utter.match(pat).join(' ')); 
+</script>
+</body></html>
+
